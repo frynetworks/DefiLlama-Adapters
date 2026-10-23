@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  toml: 5.0.1
+
 importers:
 
   .:
@@ -988,6 +991,7 @@ packages:
   eslint@9.38.0:
     resolution: {integrity: sha512-t5aPOpmtJcZcz5UJyY2GbvpDlsK5E8JqRqoKtfiKE3cNh437KIqfJr3A3AKf5k64NPx6d0G3dno6XDY05PqPtw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1397,6 +1401,7 @@ packages:
 
   starknet@5.29.0:
     resolution: {integrity: sha512-eEcd6uiYIwGvl8MtHOsXGBhREqjJk84M/qUkvPLQ3n/JAMkbKBGnygDlh+HAsvXJsGlMQfwrcVlm6KpDoPha7w==}
+    deprecated: starknet <10 is end-of-life and no longer receives security fixes. Upgrade to starknet@10 (10.8.0 or later).
 
   stream-chain@2.2.5:
     resolution: {integrity: sha512-1TJmBx6aSWqZ4tx7aTpBDXK0/e2hhcNSTV8+CbFJtDjbb+I1mZ8lHit0Grw9GRT+6JbIrrDd8esncgBi8aBXGA==}
@@ -1437,8 +1442,9 @@ packages:
   text-encoding-utf-8@1.0.2:
     resolution: {integrity: sha512-8bw4MY9WjdsD2aMtO0OzOCY3pXGYNx2d2FfHRVUKkiCPDWjKuOlhLVASS+pD7VkLTVjW268LYJHwsnPFlBpbAg==}
 
-  toml@3.0.0:
-    resolution: {integrity: sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==}
+  toml@5.0.1:
+    resolution: {integrity: sha512-EqYNA/YvUNndrA2B3O2ojzLQoTQrBxeZ9UIjQwk8t10oe6n7dwclBwd9IdZQTOKwe6vWX+AXtl6IntXRbepdxQ==}
+    engines: {node: '>=20'}
 
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
@@ -1496,6 +1502,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   viem@2.40.0:
@@ -2078,7 +2085,7 @@ snapshots:
       pako: 2.1.0
       snake-case: 3.0.4
       superstruct: 0.15.5
-      toml: 3.0.0
+      toml: 5.0.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2246,7 +2253,7 @@ snapshots:
       pako: 2.1.0
       snake-case: 3.0.4
       superstruct: 0.15.5
-      toml: 3.0.0
+      toml: 5.0.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -3446,7 +3453,7 @@ snapshots:
 
   text-encoding-utf-8@1.0.2: {}
 
-  toml@3.0.0: {}
+  toml@5.0.1: {}
 
   tr46@0.0.3: {}
 

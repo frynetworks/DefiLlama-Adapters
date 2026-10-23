@@ -50,6 +50,11 @@
     "ws": "^8.18.3"
   },
   "overrides": {},
+  "pnpm": {
+    "overrides": {
+      "toml": "5.0.1"
+    }
+  },
   "description": "",
   "devDependencies": {
     "eslint": "^9.38.0"
